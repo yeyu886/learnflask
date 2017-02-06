@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1>Hello, {{user.nickname}}</h1>
+        <div>
+        {% for pp in posts %}
+        <p>{{pp.author}} say:<b> {{pp.body}} </b></p>
+        {% endfor %}
+        </div>
+{% endblock %}
